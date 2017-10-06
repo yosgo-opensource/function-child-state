@@ -1,0 +1,19 @@
+{
+  "env": {
+    "test": {
+      "presets": ["es2015", "react"]
+    },
+    "develop": {
+      "presets": [
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ],
+        "react"
+      ],
+      "plugins": ["external-helpers", "transform-class-properties"]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "function-child-state",
+  "version": "0.0.1",
+  "main": "./dist/state-provider.js",
+  "scripts": {
+    "build-rollup": "rollup -c",
+    "build-rollup:min": "cross-env MINIFY=minify rollup -c",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosgo-opensource/function-child-state.git"
+  },
+  "author": {
+    "name": "Whien Liou",
+    "email": "sal95610@gmail.com",
+    "url": "https://twitter.com/Wn_Boy"
+  },
+  "dependencies": {
+    "prop-types": ">=15"
+  },
+  "peerDependencies": {
+    "react": ">=15"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "jest": "^21.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    }
+  }
+}
