@@ -1,19 +1,22 @@
 {
   "env": {
     "test": {
-      "presets": ["es2015", "react"]
+      "presets": [
+        "es2015",
+        "react"
+      ]
     },
     "develop": {
       "presets": [
         [
-          "es2015",
-          {
-            "modules": false
-          }
+          "es2015-rollup"
         ],
         "react"
       ],
-      "plugins": ["external-helpers", "transform-class-properties"]
+      "plugins": [
+        "external-helpers",
+        "transform-class-properties"
+      ]
     }
   }
 }

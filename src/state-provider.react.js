@@ -27,7 +27,7 @@ class StateProvider extends Component {
   }
 }
 
-StoreContainer.propTypes = {
+StateProvider.propTypes = {
   combineInitialState: PropTypes.object.isRequired,
   combineActions: PropTypes.func.isRequired
 };

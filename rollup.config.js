@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import uglify from 'rollup-plugin-uglify';
+import babelrc from 'babelrc-rollup';
 
 function makeDest(format) {
   return `dist/min/${pkg.name}.${format}${isMinify ? `.min` : ``}.js`;
@@ -24,7 +25,7 @@ export default {
   useStrict: false,
   external: ['react', 'prop-types'],
   plugins: [
-    babel({ runtimeHelpers: false, exclude: 'node_modules/**' }),
+    babel(babelrc()),
     isMinify ? uglify() : {}
   ],
   globals: {
